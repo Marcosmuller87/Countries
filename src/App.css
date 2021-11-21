@@ -1,0 +1,45 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+img,
+.title {
+  margin: 1.5rem auto;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  position: relative;
+  background: url("./assets/countries.jpg") no-repeat center fixed;
+  min-height: 100vh;
+  background-size: cover;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  background-blend-mode: soft-light;
+}
+
+.title {
+  color: wheat;
+}
+
+.form {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.weather {
+  margin-top: 2rem;
+}
+
+.country-name {
+  margin-top: 1.5rem;
+}
+
+.apis {
+  color: yellowgreen;
+}
