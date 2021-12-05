@@ -28,7 +28,7 @@ const App = () => {
       const capital = countries[0].capital;
       axios
         .get(
-          `http://api.weatherstack.com/current?access_key=${process.env.REACT_APP_API_KEY}&query=${capital}`
+          `https://api.weatherstack.com/current?access_key=${process.env.REACT_APP_API_KEY}&query=${capital}`
         )
         .then((response) => {
           console.log(response);
