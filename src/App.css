@@ -2,9 +2,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+strong,
+.lang {
+  color: aqua;
+}
+
 img,
 .title {
-  margin: 1.5rem auto;
+  margin: 2rem auto;
 }
 
 li {
@@ -22,7 +27,7 @@ li {
 }
 
 .title {
-  color: wheat;
+  color: rgb(240, 205, 140);
 }
 
 .form {
@@ -33,11 +38,7 @@ li {
 }
 
 .weather {
-  margin-top: 2rem;
-}
-
-.country-name {
-  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .apis {

@@ -28,10 +28,9 @@ const App = () => {
       const capital = countries[0].capital;
       axios
         .get(
-          `https://api.weatherstack.com/current?access_key=${process.env.REACT_APP_API_KEY}&query=${capital}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${capital}&appid=${process.env.REACT_APP_API_KEY}&units=metric`
         )
         .then((response) => {
-          console.log(response);
           setWeather(response.data);
         });
     }
@@ -71,7 +70,7 @@ const App = () => {
         <Weather weather={weather} countries={countries} />
         <div>
           Powered by <strong className="apis">REST Countries</strong> &{" "}
-          <strong className="apis">Weatherstack</strong>
+          <strong className="apis">OpenWeather</strong>
         </div>
       </div>
     </div>

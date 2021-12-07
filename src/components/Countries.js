@@ -4,7 +4,7 @@ const Countries = ({ countries, handler }) => {
   } else if (countries.length > 1 && countries.length < 10) {
     return countries.map((country) => (
       <div className="text-center container" key={country.numericCode}>
-        <h4 className="country-name">{country.name}</h4>
+        <h4>{country.name}</h4>
         <button
           className="btn btn-primary btn-rounded"
           onClick={() => handler(country.name)}
@@ -36,7 +36,7 @@ const Countries = ({ countries, handler }) => {
         <p>
           <strong>Continent:</strong> {country.region}
         </p>
-        <h4>Spoken Languages:</h4>
+        <h5 className="lang">Spoken Languages:</h5>
         <ul className="list-group">
           {country.languages.map((language) => (
             <li key={language.name}>{language.name}</li>
